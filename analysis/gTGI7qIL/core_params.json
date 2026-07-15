@@ -1,0 +1,158 @@
+{
+  "inputDatasetSmartName": "STLsimulation",
+  "script": {
+    "steps": [
+      {
+        "type": "PythonUDF",
+        "params": {
+          "mode": "ROW",
+          "pythonSourceCode": "# Modify the process function to fit your needs\ndef process(row):\n    # In \u0027row\u0027 mode, the process function \n    # must return the full row.\n    # The \u0027row\u0027 argument is a dictionary of columns of the row\n    # You may modify the \u0027row\u0027 in place to\n    # keep the previous values of the row.\n    # Here, we simply add two new columns.\n    row[\"rowLength\"] \u003d len(row)\n    row[\"static_value\"] \u003d 42\n    return row\n",
+          "stopOnError": true,
+          "usePythonUnicode": true,
+          "useKernel": false,
+          "vectorize": false,
+          "vectorSize": 256,
+          "sourceColumnsList": [],
+          "envSelection": {
+            "envMode": "INHERIT"
+          }
+        },
+        "metaType": "PROCESSOR",
+        "preview": true,
+        "disabled": false,
+        "alwaysShowComment": false
+      }
+    ],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL"
+    },
+    "columnWidthsByName": {
+      "Panel1_Density": 134,
+      "Panel1_Thickness_mm": 158,
+      "Panel1_ElasticModulusGPa": 195,
+      "Panel1_PoissonRatio": 158,
+      "Panel1_DampingRatio": 158,
+      "Panel2_Density": 134,
+      "Panel2_Thickness_mm": 158,
+      "Panel2_ElasticModulusGPa": 195,
+      "Panel2_PoissonRatio": 158,
+      "Panel2_DampingRatio": 158,
+      "Panel3_Density": 134,
+      "Panel3_Thickness_mm": 158,
+      "Panel3_ElasticModulusGPa": 195,
+      "Panel3_PoissonRatio": 158,
+      "Panel3_DampingRatio": 158,
+      "Absorber1_Density": 143,
+      "Absorber1_MaterialDensity": 203,
+      "Absorber1_Thickness_mm": 180,
+      "Absorber1_SolidElasticModulusGPa": 255,
+      "Absorber1_SolidPoissonRatio": 218,
+      "Absorber1_DampingRatio": 180,
+      "Absorber1_AirFlowResistivity": 225,
+      "Absorber1_Porosity": 150,
+      "Absorber1_Tortuosity": 165,
+      "Absorber2_Density": 143,
+      "Absorber2_MaterialDensity": 203,
+      "Absorber2_Thickness_mm": 180,
+      "Absorber2_SolidElasticModulusGPa": 255,
+      "Absorber2_SolidPoissonRatio": 218,
+      "Absorber2_DampingRatio": 180,
+      "Absorber2_AirFlowResistivity": 225,
+      "Absorber2_Porosity": 150,
+      "Absorber2_Tortuosity": 165,
+      "Absorber3_Density": 143,
+      "Absorber3_MaterialDensity": 203,
+      "Absorber3_Thickness_mm": 180,
+      "Absorber3_SolidElasticModulusGPa": 255,
+      "Absorber3_SolidPoissonRatio": 218,
+      "Absorber3_DampingRatio": 180,
+      "Absorber3_AirFlowResistivity": 225,
+      "Absorber3_Porosity": 150,
+      "Absorber3_Tortuosity": 165,
+      "Frequency": 134,
+      "Transmission_Loss": 143
+    },
+    "columnUseScientificNotationByName": {},
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "valueColoringMode": "HASH"
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxRecordsForDisplay": -1,
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": [],
+  "name": "Performance modeling of Transmission_Loss on STLsimulation",
+  "versionTag": {
+    "versionNumber": 6,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1685476425262
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1685377866546
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}

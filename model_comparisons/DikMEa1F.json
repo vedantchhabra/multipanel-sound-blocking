@@ -1,0 +1,87 @@
+{
+    "displayName": "Compare 5 models from Predict Transmission_Loss",
+    "predictionType": "REGRESSION",
+    "comparedModels": [
+        {
+            "smartId": "A-*-w4kSM6Ob-pz7DIlWL-s8-pp1-m1",
+            "isSelected": true,
+            "color": "#ff7f0e",
+            "isChampion": false
+        },
+        {
+            "smartId": "A-*-w4kSM6Ob-pz7DIlWL-s12-pp1-m1",
+            "isSelected": true,
+            "color": "#1f77b4",
+            "isChampion": false
+        },
+        {
+            "smartId": "A-*-w4kSM6Ob-pz7DIlWL-s9-pp1-m1",
+            "isSelected": true,
+            "color": "#2ca02c",
+            "isChampion": false
+        },
+        {
+            "smartId": "A-*-w4kSM6Ob-pz7DIlWL-s10-pp1-m1",
+            "isSelected": true,
+            "color": "#d62728",
+            "isChampion": false
+        },
+        {
+            "smartId": "A-*-w4kSM6Ob-pz7DIlWL-s11-pp1-m1",
+            "isSelected": true,
+            "color": "#9467bd",
+            "isChampion": false
+        }
+    ],
+    "displayParams": {
+        "displayedMetrics": [
+            "EVS",
+            "MAPE",
+            "MAE",
+            "MSE",
+            "RMSE",
+            "R2",
+            "PEARSON"
+        ],
+        "predictionType": "REGRESSION",
+        "pinnedMetrics": [
+            "MAE"
+        ],
+        "xLabel": "model:date",
+        "yLabels": [
+            "model:algorithm",
+            "evaluation:date",
+            "evaluationDataset:dataset-name"
+        ],
+        "alsoDisplayedLabels": [],
+        "barLabels": [
+            "evaluation:date",
+            "model:name",
+            "evaluationDataset:dataset-name"
+        ],
+        "graphStyle": "BAR",
+        "sortColumn": "",
+        "sortDescending": false,
+        "showConfidenceIntervals": true,
+        "disabledMERunIds": []
+    },
+    "versionTag": {
+        "versionNumber": 5,
+        "lastModifiedBy": {
+            "login": "admin"
+        },
+        "lastModifiedOn": 1685662061133
+    },
+    "creationTag": {
+        "versionNumber": 0,
+        "lastModifiedBy": {
+            "login": "admin"
+        },
+        "lastModifiedOn": 1685662011940
+    },
+    "tags": [],
+    "customFields": {},
+    "checklists": {
+        "checklists": []
+    }
+}

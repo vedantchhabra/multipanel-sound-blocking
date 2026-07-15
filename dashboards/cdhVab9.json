@@ -1,0 +1,39 @@
+{
+  "pages": [
+    {
+      "id": "n0GXlGH",
+      "grid": {
+        "tiles": []
+      },
+      "showTitle": false,
+      "enableCrossFilters": true,
+      "filtersParams": {
+        "panelPosition": "TOP"
+      }
+    }
+  ],
+  "owner": "admin",
+  "listed": true,
+  "name": "STL  simulation's default dashboard",
+  "showGrid": true,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1685377621238
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1685377621238
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  },
+  "columnNumber": 36
+}

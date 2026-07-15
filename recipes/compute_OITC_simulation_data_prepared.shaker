@@ -1,0 +1,140 @@
+{
+  "columnsSelection": {
+    "mode": "ALL"
+  },
+  "explorationSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": 10000,
+      "maxRecordsForDisplay": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "maxStoredBytes": 104857600,
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "timeout": -1
+    },
+    "autoRefreshSample": false
+  },
+  "explorationFilters": [],
+  "columnUseScientificNotationByName": {},
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "Panel1_Thickness_mm + Panel2_Thickness_mm + Panel3_Thickness_mm + Absorber1_Thickness_mm + Absorber2_Thickness_mm + Absorber3_Thickness_mm",
+        "column": "Total_Thickness_mm"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CreateColumnWithGREL",
+      "params": {
+        "expression": "round(Total_Basis_Wt/Total_Thickness_mm * 1000 * 10)/10",
+        "column": "Average_Density"
+      },
+      "alwaysShowComment": false
+    }
+  ],
+  "maxProcessedMemTableBytes": -1,
+  "previewMode": "ALL_ROWS",
+  "vizSampling": {
+    "_refreshTrigger": 0,
+    "selection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "latestPartitionsN": 1,
+      "maxRecords": -1,
+      "ordering": {
+        "rules": [],
+        "enabled": false
+      },
+      "withinFirstN": -1,
+      "partitionSelectionMethod": "ALL",
+      "targetRatio": 0.02,
+      "maxReadUncompressedBytes": -1,
+      "samplingMethod": "FULL"
+    },
+    "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "columnWidthsByName": {
+    "Panel3_DampingRatio": 158,
+    "Absorber2_Porosity": 150,
+    "Average_Density": 128,
+    "Panel2_DampingRatio": 158,
+    "Absorber3_SolidPoissonRatio": 218,
+    "Panel1_DampingRatio": 158,
+    "Panel3_PoissonRatio": 158,
+    "Sp_OITC_Rating": 134,
+    "Panel1_PoissonRatio": 158,
+    "Panel2_ElasticModulusGPa": 195,
+    "Absorber2_MaterialDensity": 203,
+    "Absorber2_Tortuosity": 165,
+    "Absorber2_SolidElasticModulusGPa": 255,
+    "Panel2_PoissonRatio": 158,
+    "Total_Thickness_mm": 150,
+    "Absorber3_SolidElasticModulusGPa": 255,
+    "Absorber2_SolidPoissonRatio": 218,
+    "Absorber1_Thickness_mm": 180,
+    "Absorber3_Porosity": 150,
+    "Absorber1_Tortuosity": 165,
+    "Total_Basis_Wt": 134,
+    "Panel1_ElasticModulusGPa": 195,
+    "Absorber2_DampingRatio": 180,
+    "Absorber3_DampingRatio": 180,
+    "Absorber3_AirFlowResistivity": 225,
+    "OITC_Rating": 134,
+    "Absorber1_DampingRatio": 180,
+    "Absorber2_AirFlowResistivity": 225,
+    "Absorber3_MaterialDensity": 203,
+    "Panel2_Density": 134,
+    "Absorber1_AirFlowResistivity": 225,
+    "Absorber1_SolidPoissonRatio": 218,
+    "Absorber1_Density": 143,
+    "Absorber1_Porosity": 150,
+    "Absorber2_Thickness_mm": 180,
+    "Absorber1_SolidElasticModulusGPa": 255,
+    "Absorber3_Thickness_mm": 180,
+    "Panel3_Density": 134,
+    "Absorber2_Density": 143,
+    "Absorber3_Density": 143,
+    "Panel2_Thickness_mm": 158,
+    "Absorber1_MaterialDensity": 203,
+    "Panel1_Thickness_mm": 158,
+    "Panel1_Density": 134,
+    "Panel3_Thickness_mm": 158,
+    "Panel3_ElasticModulusGPa": 195,
+    "Absorber3_Tortuosity": 165
+  },
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
+  }
+}
